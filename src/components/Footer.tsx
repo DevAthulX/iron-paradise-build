@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Twitter, Mail, Phone } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-display text-primary">Iron Paradise</h3>
+            <img 
+              src={logo} 
+              alt="Iron Paradise Gym" 
+              className="h-16 w-auto object-contain mb-2"
+            />
             <p className="text-sm text-muted-foreground">
               Where Strength is Built. Join our community of champions and transform your life.
             </p>
